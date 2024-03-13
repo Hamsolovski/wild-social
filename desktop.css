@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+nav {
+    background-color: #1D1D1B;
+}
+
+nav>img {
+    width: 109px;
+    height: 78px;
+    color: #f7146b;
+
+}
+
+nav h1 {
+    color: #fff4f8;
+}
+
+nav>ul>li {
+    padding: 32px;
+    color: #fff4f8;
+}
+
+header>footer {
+    background-color: #f7146b;
+}
+=======
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
@@ -68,3 +93,4 @@ main>.post>.post-box>footer>ul>li>img {
     width: 1.4em;
 }
 
+>>>>>>> d2c1fddae66533dfa64f695340738f22c8c868a9
