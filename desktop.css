@@ -1,3 +1,4 @@
+
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
@@ -13,7 +14,54 @@ body {
 /* MENU */
 
 header>nav {
-    background-color: var(--second-color);
+  background-color: var(--second-color);}
+
+/*NAVIGATION*/
+
+nav,
+h1 li {
+    font-family: "Raleway";
+    color: white;
+}
+
+footer {
+    font-family: 'Raleway';
+    color: #1D1D1B;
+}
+
+/*Post*/
+
+h2 p {
+    font-family: 'Montserrat';
+    color: #1D1D1B;
+
+}
+
+/*button*/
+
+button {
+    font-family: 'Raleway';
+    color: #F7146B;
+}
+
+/*profil*/
+
+div,
+#imagedefond {
+    background-image: url("assets/img/tennis-2585621_1280.jpg");
+    height: 200px;
+    width: 200px;
+}
+
+.imagedeprofile {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+
+nav {
+    background-color: #1D1D1B;
 }
 
 header>nav>img {
@@ -34,6 +82,12 @@ header>nav>ul>li {
 
 header>footer {
     background-color: var(--main-color);
+}
+
+* {
+    --main-color: #f7146b;
+    --second-color: #1d1d1b;
+    --tertiary-color: #fff4f8;
 }
 
 
@@ -98,10 +152,6 @@ main>.post>.post-box>footer>ul>li {
     gap: 10px;
     font-size: 1.4em;
     font-weight: 900;
-}
-
-main>.post>.post-box>footer>ul>li {
-
 }
 
 main>.post>.post-box>footer>ul>li:hover {
