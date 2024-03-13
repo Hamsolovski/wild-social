@@ -1,4 +1,3 @@
-
 /*NAVIGATION*/
 
 nav,
@@ -25,22 +24,41 @@ h2 p {
 button {
     font-family: 'Raleway';
     color: #F7146B;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: white;
+
+
 }
+
+.pencilbutton {
+    height: 10px;
+}
+
 
 /*profil*/
 
 div,
-#imagedefond {
+.imagedefond {
+    margin: 5px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url("assets/img/tennis-2585621_1280.jpg");
     height: 200px;
-    width: 200px;
+    width: 1000px;
 }
 
 .imagedeprofile {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    border: solid;
+    border-color: #F7146B;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: -50px;
 }
+
 
 
 nav {
@@ -136,4 +154,3 @@ main>.post>.post-box>footer>ul>li {
 main>.post>.post-box>footer>ul>li>img {
     width: 1.4em;
 }
-
