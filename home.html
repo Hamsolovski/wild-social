@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 992px)">
 </head>
 
 <body>
@@ -20,11 +22,10 @@
                 <li>Setting</li>
                 <li>Search</li>
             </ul>
-
         </nav>
         <footer>
-            <p>Partage ce site
-                Made with love by Antoine, Erwan et Mickaël
+            <p>Partage ce site<br>
+                Made with love by Antoine, Erwan et Mickaël<br>
                 Nous joindre au 06 01 02 03 04
             </p>
             <p>© wilders 2024</p>
@@ -35,6 +36,7 @@
         <h1>Mon fil</h1>
         <article class="post">
             <sidebar></sidebar>
+            <section class="post-box">
             <header>
                 <img class="profile-pic" src="assets/img/cat-img1.jpg" alt="" />
                 <h2 class="username">Antoine Delalande</h2>
@@ -55,6 +57,7 @@
                     <li class="comments"><img src="assets/icons/comment 1.svg" alt="">1</li>
                 </ul>
             </footer>
+            </section>
         </article>
     </main>
 </body>
