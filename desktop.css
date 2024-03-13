@@ -1,4 +1,21 @@
 
+* {
+    --main-color: #f7146b;
+    --second-color: #1d1d1b;
+    --tertiary-color: #fff4f8;
+}
+
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MENU */
+
+header>nav {
+  background-color: var(--second-color);}
+
 /*NAVIGATION*/
 
 nav,
@@ -47,24 +64,24 @@ nav {
     background-color: #1D1D1B;
 }
 
-nav>img {
+header>nav>img {
     width: 109px;
     height: 78px;
-    color: #f7146b;
+    color: var(--main-color);
 
 }
 
-nav h1 {
-    color: #fff4f8;
+header>nav>h1 {
+    color: var(--tertiary-color);
 }
 
-nav>ul>li {
+header>nav>ul>li {
     padding: 32px;
-    color: #fff4f8;
+    color: var(--tertiary-color);
 }
 
 header>footer {
-    background-color: #f7146b;
+    background-color: var(--main-color);
 }
 
 * {
@@ -74,8 +91,8 @@ header>footer {
 }
 
 
+/*POST*/
 
-/*POST CLASS*/
 main>.post {
     margin: 30px;
     display: flex;
@@ -83,6 +100,10 @@ main>.post {
     background-color: var(--tertiary-color);
     border-radius: 20px;
     box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
+}
+
+main>.post:hover {
+    transform: rotate(0.3deg);
 }
 
 main>.post>sidebar {
@@ -114,7 +135,7 @@ main>.post>.post-box>header>.profile-info>.username {
 }
 
 main>.post>.post-box>footer {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 main>.post>.post-box>footer>ul {
@@ -133,7 +154,6 @@ main>.post>.post-box>footer>ul>li {
     font-weight: 900;
 }
 
-main>.post>.post-box>footer>ul>li>img {
-    width: 1.4em;
+main>.post>.post-box>footer>ul>li:hover {
+    color: #f7146b
 }
-
