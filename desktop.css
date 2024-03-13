@@ -16,6 +16,10 @@ main>.post {
     box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
 }
 
+main>.post:hover {
+    transform: rotate(0.3deg);
+}
+
 main>.post>sidebar {
     padding: 1em;
     background-color: var(--main-color);
@@ -64,7 +68,8 @@ main>.post>.post-box>footer>ul>li {
     font-weight: 900;
 }
 
-main>.post>.post-box>footer>ul>li>img {
-    width: 1.4em;
-}
+main>.post>.post-box>footer>ul>li {}
 
+main>.post>.post-box>footer>ul>li:hover {
+    color: #f7146b
+}
