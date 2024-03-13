@@ -1,0 +1,42 @@
+/*NAVIGATION*/
+
+nav,
+h1 li {
+    font-family: "Raleway";
+    color: white;
+}
+
+footer {
+    font-family: 'Raleway';
+    color: #1D1D1B;
+}
+
+/*Post*/
+
+h2 p {
+    font-family: 'Montserrat';
+    color: #1D1D1B;
+
+}
+
+/*button*/
+
+button {
+    font-family: 'Raleway';
+    color: #F7146B;
+}
+
+/*profil*/
+
+div,
+#imagedefond {
+    background-image: url("assets/img/tennis-2585621_1280.jpg");
+    height: 200px;
+    width: 200px;
+}
+
+.imagedeprofile {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
