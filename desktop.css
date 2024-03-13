@@ -1,0 +1,23 @@
+nav {
+    background-color: #1D1D1B;
+}
+
+nav>img {
+    width: 109px;
+    height: 78px;
+    color: #f7146b;
+
+}
+
+nav h1 {
+    color: #fff4f8;
+}
+
+nav>ul>li {
+    padding: 32px;
+    color: #fff4f8;
+}
+
+header>footer {
+    background-color: #f7146b;
+}
