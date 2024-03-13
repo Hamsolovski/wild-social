@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" href="desktop.css">
+    
+    <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 992px)"> -->
 </head>
 
 <body>
@@ -39,8 +41,10 @@
             <section class="post-box">
             <header>
                 <img class="profile-pic" src="assets/img/cat-img1.jpg" alt="" />
-                <h2 class="username">Antoine Delalande</h2>
-                <p class="date">a wildé le 26 février 2024</p>
+                <section class="profile-info">
+                    <h2 class="username">Antoine Delalande</h2>
+                    <p class="date">a wildé le 26 février 2024</p>
+                </section>
             </header>
             <main>
                 <img class="pic1" src="" alt="" />
@@ -52,9 +56,9 @@
             </main>
             <footer>
                 <ul class="interactions">
-                    <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">25</li>
-                    <li class="shares"><img src="assets/icons/share 1.svg" alt="">378</li>
-                    <li class="comments"><img src="assets/icons/comment 1.svg" alt="">1</li>
+                    <li class="likes"><i class="bi bi-hand-thumbs-up-fill"></i>25</li>
+                    <li class="shares"><i class="bi bi-share"></i>378</li>
+                    <li class="comments"><i class="bi bi-blockquote-right"></i></i>1</li>
                 </ul>
             </footer>
             </section>
