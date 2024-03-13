@@ -5,8 +5,44 @@
 }
 
 
+body {
+    display: flex;
+    justify-content: space-between;
+}
 
-/*POST CLASS*/
+/* MENU */
+
+header>nav {
+    background-color: var(--second-color);
+}
+
+header>nav>img {
+    width: 109px;
+    height: 78px;
+    color: var(--main-color);
+
+}
+
+header>nav>h1 {
+    color: var(--tertiary-color);
+}
+
+header>nav>ul>li {
+    padding: 32px;
+    color: var(--tertiary-color);
+}
+
+header>footer {
+    background-color: var(--main-color);
+}
+
+
+/*POST*/
+main {
+    padding: 2vh 1vw;
+
+}
+
 main>.post {
     margin: 30px;
     display: flex;
@@ -49,7 +85,7 @@ main>.post>.post-box>header>.profile-info>.username {
 }
 
 main>.post>.post-box>footer {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 main>.post>.post-box>footer>ul {
@@ -68,7 +104,9 @@ main>.post>.post-box>footer>ul>li {
     font-weight: 900;
 }
 
-main>.post>.post-box>footer>ul>li {}
+main>.post>.post-box>footer>ul>li {
+
+}
 
 main>.post>.post-box>footer>ul>li:hover {
     color: #f7146b
