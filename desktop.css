@@ -3,6 +3,8 @@
     --main-color: #f7146b;
     --second-color: #1d1d1b;
     --tertiary-color: #fff4f8;
+    font-family: 'Montserrat';
+    color: #1D1D1B;
 }
 
 
@@ -31,11 +33,6 @@ footer {
 
 /*Post*/
 
-h2 p {
-    font-family: 'Montserrat';
-    color: #1D1D1B;
-
-}
 
 /*button*/
 
