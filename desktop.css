@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+nav {
+    background-color: #1D1D1B;
+=======
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
@@ -20,6 +24,7 @@ body {
 header>nav {
     background-color: var(--second-color);
     height: calc(100% - 65px);
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
 }
 
 nav>img {
@@ -38,7 +43,7 @@ nav>ul {
 }
 
 nav>li {
-    font-size: medium;
+    font-size: 40%;
 }
 
 #navBar {
@@ -53,6 +58,25 @@ header>footer {
     color: #1D1D1B;
 }
 
+<<<<<<< HEAD
+* {
+    --main-color: #f7146b;
+    --second-color: #1d1d1b;
+    --tertiary-color: #fff4f8;
+}
+
+body {
+    display: flex;
+
+}
+
+main {
+    margin-left: 26%;
+}
+
+/*POST CLASS*/
+main>.post {
+=======
 nav,
 h1 li {
     font-family: "Raleway";
@@ -62,6 +86,7 @@ h1 li {
 /*Post*/
 
 .post {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     margin: 30px;
     display: flex;
     justify-content: space-between;
@@ -70,34 +95,61 @@ h1 li {
     box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
 }
 
+<<<<<<< HEAD
+main>.post>sidebar {
+=======
 .post:hover {
     transform: rotate(0.3deg);
 }
 
 .post>sidebar {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     padding: 1em;
     background-color: var(--main-color);
 
 }
 
+<<<<<<< HEAD
+main>.post>.post-box {
+    padding: 1.5em;
+}
+
+main>.post>.post-box>header {
+=======
 .post>.post-box {
     padding: 1.5em;
 }
 
 .post>.post-box>header {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
 
+<<<<<<< HEAD
+main>.post>.post-box>header>img {
+=======
 .post>.post-box>header>img {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     width: 60px;
     height: 60px;
     border-radius: 100%;
     border: solid 1px var(--main-color)
 }
 
+<<<<<<< HEAD
+main>.post>.post-box>header>.profile-info>.username {
+    font-weight: 900;
+}
+
+main>.post>.post-box>footer {
+    padding: 10px 0;
+}
+
+main>.post>.post-box>footer>ul {
+=======
 .post>.post-box>header>.profile-info>.username {
     font-weight: 900;
 }
@@ -107,13 +159,18 @@ h1 li {
 }
 
 .post>.post-box>footer>ul {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
 
+<<<<<<< HEAD
+main>.post>.post-box>footer>ul>li {
+=======
 .post>.post-box>footer>ul>li {
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -122,6 +179,10 @@ h1 li {
     font-weight: 900;
 }
 
+<<<<<<< HEAD
+main>.post>.post-box>footer>ul>li>img {
+    width: 1.4em;
+=======
 .post>.post-box>footer>ul>li>img {
     width: 1.4em;
 
@@ -187,4 +248,5 @@ header>nav>ul>li {
 
 header>footer {
     background-color: var(--main-color);
+>>>>>>> 803ae490ec152d3b463d66a410f64dbc6c6481b2
 }
