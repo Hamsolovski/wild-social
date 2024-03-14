@@ -1,4 +1,3 @@
-
 nav {
     background-color: #1D1D1B;
 }
@@ -54,6 +53,8 @@ body {
 
 main {
     margin-left: 26%;
+}
+
 
 body {
     display: flex;
@@ -63,7 +64,8 @@ body {
 /* MENU */
 
 header>nav {
-  background-color: var(--second-color);}
+    background-color: var(--second-color);
+}
 
 
 /*NAVIGATION*/
@@ -234,4 +236,3 @@ main>.post>.post-box>footer>ul>li>img {
 main>.post>.post-box>footer>ul>li:hover {
     color: #f7146b
 }
-
