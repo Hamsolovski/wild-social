@@ -2,237 +2,308 @@ nav {
     background-color: #1D1D1B;
 }
 
-nav>img {
-    width: 109px;
-    height: 78px;
-    color: #f7146b;
-
-}
-
-nav h1 {
-    color: #fff4f8;
-}
-
-nav>ul {
-    padding: 130px;
-    color: #fff4f8;
-}
-
-nav>li {
-    font-size: medium;
-}
-
-nav {
-    height: calc(100% - 65px);
-}
-
-#navBar {
-    height: 100vh;
-    position: fixed;
-    width: 26%;
-}
-
-header>footer {
-    background-color: #f7146b;
-}
-
-
-
-
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
     --tertiary-color: #fff4f8;
-}
-
-body {
-    display: flex;
-
-
-}
-
-main {
-    margin-left: 26%;
-}
-
-
-body {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* MENU */
-
-header>nav {
-    background-color: var(--second-color);
-}
-
-
-/*NAVIGATION*/
-
-nav,
-h1 li {
-    font-family: "Raleway";
-    color: white;
-}
-
-footer {
-    font-family: 'Raleway';
-    color: #1D1D1B;
-}
-
-/*Post*/
-
-h2 p {
     font-family: 'Montserrat';
     color: #1D1D1B;
 
-}
 
-/*button*/
+    body {
+        display: flex;
+        justify-content: space-between;
+    }
 
-button {
-    font-family: 'Raleway';
-    color: #F7146B;
-    border-radius: 25px;
-    border-width: 1px;
-    background-color: white;
+    #main-home {
+        margin-left: 30%;
+    }
 
+    /*NAVIGATION*/
 
-}
+    header>nav {
+        background-color: var(--second-color);
+        height: calc(100% - 65px);
+    }
 
-.pencilbutton {
-    height: 10px;
-}
+    nav>img {
+        width: 109px;
+        height: 78px;
+        color: #f7146b;
+    }
 
+    nav>h1 {
+        color: #fff4f8;
+    }
 
-/*profil*/
+    nav>ul {
+        padding: 130px;
+        color: #fff4f8;
+    }
 
-div,
-.imagedefond {
-    margin: 5px 5px 0px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url("assets/img/tennis-2585621_1280.jpg");
-    height: 200px;
-    width: 1000px;
-}
+    nav>li {
+        font-size: medium;
+    }
 
-.imagedeprofile {
-    border-radius: 50%;
-    border: solid;
-    border-color: #F7146B;
-    height: 200px;
-    width: 200px;
-    position: relative;
-    bottom: -100px;
-}
+    #navBar {
+        height: 100vh;
+        position: fixed;
+        width: 26%;
+    }
 
-
-
-
-nav {
-    background-color: #1D1D1B;
-}
-
-header>nav>img {
-    width: 109px;
-    height: 78px;
-    color: var(--main-color);
-
-}
-
-header>nav>h1 {
-    color: var(--tertiary-color);
-}
-
-header>nav>ul>li {
-    padding: 32px;
-    color: var(--tertiary-color);
-}
-
-header>footer {
-    background-color: var(--main-color);
-}
-
-* {
-    --main-color: #f7146b;
-    --second-color: #1d1d1b;
-    --tertiary-color: #fff4f8;
-}
+    header>footer {
+        background-color: #f7146b;
+        font-family: 'Raleway';
+        color: #1D1D1B;
+    }
 
 
-/*POST*/
 
 
-main>.post {
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--tertiary-color);
-    border-radius: 20px;
-    box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
-}
+    * {
+        --main-color: #f7146b;
+        --second-color: #1d1d1b;
+        --tertiary-color: #fff4f8;
+    }
 
-main>.post:hover {
-    transform: rotate(0.3deg);
-}
-
-main>.post>sidebar {
-    padding: 1em;
-    background-color: var(--main-color);
-
-}
-
-main>.post>.post-box {
-    padding: 1.5em;
-}
-
-main>.post>.post-box>header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-main>.post>.post-box>header>img {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: solid 1px var(--main-color)
-}
-
-main>.post>.post-box>header>.profile-info>.username {
-    font-weight: 900;
-}
-
-main>.post>.post-box>footer {
-    padding: 5px 0;
-}
-
-main>.post>.post-box>footer>ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-main>.post>.post-box>footer>ul>li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.4em;
-    font-weight: 900;
-}
-
-main>.post>.post-box>footer>ul>li>img {
-    width: 1.4em;
-
-}
+    body {
+        display: flex;
 
 
-main>.post>.post-box>footer>ul>li:hover {
-    color: #f7146b
-}
+    }
+
+    main {
+        margin-left: 26%;
+    }
+
+
+    body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* MENU */
+
+    header>nav {
+        background-color: var(--second-color);
+    }
+
+
+    /*NAVIGATION*/
+
+    nav,
+    h1 li {
+        font-family: "Raleway";
+        color: white;
+    }
+
+    /*Post*/
+
+    .post {
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--tertiary-color);
+        border-radius: 20px;
+        box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
+    }
+
+    .post:hover {
+        transform: rotate(0.3deg);
+    }
+
+    .post>sidebar {
+        padding: 1em;
+        background-color: var(--main-color);
+
+    }
+
+    .post>.post-box {
+        padding: 1.5em;
+    }
+
+    .post>.post-box>header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .post>.post-box>header>img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: solid 1px var(--main-color)
+    }
+
+    .post>.post-box>header>.profile-info>.username {
+        font-weight: 900;
+    }
+
+    .post>.post-box>footer {
+        padding: 5px 0;
+    }
+
+    .post>.post-box>footer>ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .post>.post-box>footer>ul>li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+
+    .post>.post-box>footer>ul>li>img {
+        width: 1.4em;
+
+    }
+
+    .post>.post-box>footer>ul>li:hover {
+        color: #f7146b
+    }
+
+    /*button*/
+
+    button {
+        font-family: 'Raleway';
+        color: #F7146B;
+        border-radius: 25px;
+        border-width: 1px;
+        background-color: white;
+    }
+
+    .pencilbutton {
+        height: 10px;
+    }
+
+
+    /*profil*/
+
+    div,
+    .imagedefond {
+        margin: 5px 5px 0px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url("assets/img/tennis-2585621_1280.jpg");
+        height: 200px;
+        width: 1000px;
+    }
+
+    .imagedeprofile {
+        border-radius: 50%;
+        border: solid;
+        border-color: #F7146B;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        bottom: -100px;
+    }
+
+    header>nav>img {
+        width: 109px;
+        height: 78px;
+        color: var(--main-color);
+
+    }
+
+    header>nav>h1 {
+        color: var(--tertiary-color);
+    }
+
+    header>nav>ul>li {
+        padding: 32px;
+        color: var(--tertiary-color);
+    }
+
+    header>footer {
+        background-color: var(--main-color);
+    }
+
+    * {
+        --main-color: #f7146b;
+        --second-color: #1d1d1b;
+        --tertiary-color: #fff4f8;
+    }
+
+
+    /*POST*/
+
+
+    main>.post {
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--tertiary-color);
+        border-radius: 20px;
+        box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
+    }
+
+    main>.post:hover {
+        transform: rotate(0.3deg);
+    }
+
+    main>.post>sidebar {
+        padding: 1em;
+        background-color: var(--main-color);
+
+    }
+
+    main>.post>.post-box {
+        padding: 1.5em;
+    }
+
+    main>.post>.post-box>header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main>.post>.post-box>header>img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: solid 1px var(--main-color)
+    }
+
+    main>.post>.post-box>header>.profile-info>.username {
+        font-weight: 900;
+    }
+
+    main>.post>.post-box>footer {
+        padding: 5px 0;
+    }
+
+    main>.post>.post-box>footer>ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main>.post>.post-box>footer>ul>li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+
+    main>.post>.post-box>footer>ul>li>img {
+        width: 1.4em;
+
+    }
+
+
+    main>.post>.post-box>footer>ul>li:hover {
+        color: #f7146b
+    }
