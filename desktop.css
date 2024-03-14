@@ -1,11 +1,61 @@
+<<<<<<< HEAD
+nav {
+    background-color: #1D1D1B;
+}
 
+nav>img {
+    width: 109px;
+    height: 78px;
+    color: #f7146b;
+
+}
+
+nav h1 {
+    color: #fff4f8;
+}
+
+nav>ul {
+    padding: 130px;
+    color: #fff4f8;
+}
+
+nav>li {
+    font-size: medium;
+}
+
+nav {
+    height: calc(100% - 65px);
+}
+
+#navBar {
+    height: 100vh;
+    position: fixed;
+    width: 26%;
+}
+
+header>footer {
+    background-color: #f7146b;
+}
+
+=======
+
+>>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
     --tertiary-color: #fff4f8;
 }
 
+body {
+    display: flex;
 
+<<<<<<< HEAD
+}
+
+main {
+    margin-left: 26%;
+}
+=======
 body {
     display: flex;
     justify-content: space-between;
@@ -92,6 +142,7 @@ header>footer {
 
 
 /*POST*/
+>>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
 
 main>.post {
     margin: 30px;
@@ -154,6 +205,12 @@ main>.post>.post-box>footer>ul>li {
     font-weight: 900;
 }
 
+<<<<<<< HEAD
+main>.post>.post-box>footer>ul>li>img {
+    width: 1.4em;
+}
+=======
 main>.post>.post-box>footer>ul>li:hover {
     color: #f7146b
 }
+>>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
