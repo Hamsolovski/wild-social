@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 nav {
     background-color: #1D1D1B;
 }
@@ -37,9 +37,9 @@ header>footer {
     background-color: #f7146b;
 }
 
-=======
 
->>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
+
+
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
@@ -49,13 +49,12 @@ header>footer {
 body {
     display: flex;
 
-<<<<<<< HEAD
+
 }
 
 main {
     margin-left: 26%;
-}
-=======
+
 body {
     display: flex;
     justify-content: space-between;
@@ -65,6 +64,7 @@ body {
 
 header>nav {
   background-color: var(--second-color);}
+
 
 /*NAVIGATION*/
 
@@ -92,22 +92,42 @@ h2 p {
 button {
     font-family: 'Raleway';
     color: #F7146B;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: white;
+
+
 }
+
+.pencilbutton {
+    height: 10px;
+}
+
 
 /*profil*/
 
 div,
-#imagedefond {
+.imagedefond {
+    margin: 5px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url("assets/img/tennis-2585621_1280.jpg");
     height: 200px;
-    width: 200px;
+    width: 1000px;
 }
 
 .imagedeprofile {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    border: solid;
+    border-color: #F7146B;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: -100px;
 }
+
+
 
 
 nav {
@@ -142,7 +162,7 @@ header>footer {
 
 
 /*POST*/
->>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
+
 
 main>.post {
     margin: 30px;
@@ -205,12 +225,13 @@ main>.post>.post-box>footer>ul>li {
     font-weight: 900;
 }
 
-<<<<<<< HEAD
 main>.post>.post-box>footer>ul>li>img {
     width: 1.4em;
+
 }
-=======
+
+
 main>.post>.post-box>footer>ul>li:hover {
     color: #f7146b
 }
->>>>>>> 01336c94288861f519cc289f2aaa76d620c63f13
+
