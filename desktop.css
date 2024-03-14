@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 nav {
     background-color: #1D1D1B;
 }
@@ -14,22 +13,43 @@ nav h1 {
     color: #fff4f8;
 }
 
-nav>ul>li {
-    padding: 32px;
+nav>ul {
+    padding: 130px;
     color: #fff4f8;
+}
+
+nav>li {
+    font-size: medium;
+}
+
+nav {
+    height: calc(100% - 65px);
+}
+
+#navBar {
+    height: 100vh;
+    position: fixed;
+    width: 26%;
 }
 
 header>footer {
     background-color: #f7146b;
 }
-=======
+
 * {
     --main-color: #f7146b;
     --second-color: #1d1d1b;
     --tertiary-color: #fff4f8;
 }
 
+body {
+    display: flex;
 
+}
+
+main {
+    margin-left: 26%;
+}
 
 /*POST CLASS*/
 main>.post {
@@ -92,5 +112,3 @@ main>.post>.post-box>footer>ul>li {
 main>.post>.post-box>footer>ul>li>img {
     width: 1.4em;
 }
-
->>>>>>> d2c1fddae66533dfa64f695340738f22c8c868a9
