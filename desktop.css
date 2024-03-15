@@ -15,6 +15,13 @@ body {
     margin-left: 30%;
 }
 
+i {
+    height: 100px;
+    width: 100px;
+    color: #f7146b;
+    margin-right: 15px;
+}
+
 /*NAVIGATION*/
 
 header>nav {
@@ -22,23 +29,53 @@ header>nav {
     height: calc(100% - 65px);
 }
 
-nav>img {
-    width: 109px;
-    height: 78px;
-    color: #f7146b;
+header>footer>p {
+    text-align: center;
+    font-weight: 600;
+
+
 }
 
-nav>h1 {
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 3vh;
+
+}
+
+nav>div>img {
+    width: 70px;
+    height: 78px;
+    color: #f7146b;
+
+}
+
+nav>div>h1 {
     color: #fff4f8;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+
 }
 
 nav>ul {
-    padding: 130px;
-    color: #fff4f8;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+
+
 }
 
-nav>li {
-    font-size: 40%;
+nav>ul>li {
+    font-size: 21px;
+    color: #fff4f8;
+
+
 }
 
 #navBar {
@@ -148,7 +185,6 @@ button {
 
 /*profil*/
 
-div,
 .imagedefond {
     margin: 5px 5px 0px 5px;
     display: flex;
@@ -167,24 +203,4 @@ div,
     width: 200px;
     position: relative;
     bottom: -100px;
-}
-
-header>nav>img {
-    width: 109px;
-    height: 78px;
-    color: var(--main-color);
-
-}
-
-header>nav>h1 {
-    color: var(--tertiary-color);
-}
-
-header>nav>ul>li {
-    padding: 32px;
-    color: var(--tertiary-color);
-}
-
-header>footer {
-    background-color: var(--main-color);
 }
