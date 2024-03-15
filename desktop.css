@@ -11,7 +11,8 @@ body {
     justify-content: space-between;
 }
 
-#main-home {
+#main-home,
+#main-profile {
     margin-left: 30%;
 }
 
@@ -93,8 +94,7 @@ header>footer {
     color: #1D1D1B;
 }
 
-nav,
-h1 li {
+nav h1 li {
     font-family: "Raleway";
     color: white;
 }
@@ -339,26 +339,5 @@ p.dateprofil {
     font-weight: 1000;
     font-size: 30px;
     width: 550px;
-
-}
-
-header>nav>img {
-    width: 109px;
-    height: 78px;
-    color: var(--main-color);
-
-}
-
-header>nav>h1 {
-    color: var(--tertiary-color);
-}
-
-header>nav>ul>li {
-    padding: 32px;
-    color: var(--tertiary-color);
-}
-
-header>footer {
-    background-color: var(--main-color);
 
 }
