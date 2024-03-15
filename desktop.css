@@ -25,16 +25,16 @@ header>nav {
 nav>img {
     width: 109px;
     height: 78px;
-    color: #f7146b;
+    color: var(--main-color);
 }
 
 nav>h1 {
-    color: #fff4f8;
+    color: var(--tertiary-color);
 }
 
 nav>ul {
     padding: 130px;
-    color: #fff4f8;
+    color: var(--tertiary-color);
 }
 
 nav>li {
@@ -48,7 +48,7 @@ nav>li {
 }
 
 header>footer {
-    background-color: #f7146b;
+    background-color: var(--main-color);
     font-family: 'Raleway';
     color: #1D1D1B;
 }
@@ -60,11 +60,39 @@ h1 li {
 }
 
 /*Post*/
+.add-a-post {
+    text-align: center;
+    margin: 1vh 5vw;
+    padding: 1px;
+}
+
+.add-a-post>form>textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border: solid, 1px, var(--main-color);
+    width: 100%;
+    resize: none;
+    background-color: lightblue;
+    border-radius: 0 20px 0 0;
+    padding: 1em;
+    color: var(--second-color)
+}
+
+.add-a-post:hover {
+    opacity: 0.80;
+}
+
+.thread {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 .post {
-    margin: 30px;
+    margin: 1vh 5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--tertiary-color);
     border-radius: 20px;
     box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
@@ -128,14 +156,14 @@ h1 li {
 }
 
 .post>.post-box>footer>ul>li:hover {
-    color: #f7146b
+    color: var(--main-color)
 }
 
 /*button*/
 
 button {
     font-family: 'Raleway';
-    color: #F7146B;
+    color: var(--main-color);
     border-radius: 25px;
     border-width: 1px;
     background-color: white;
@@ -162,7 +190,7 @@ div,
 .imagedeprofile {
     border-radius: 50%;
     border: solid;
-    border-color: #F7146B;
+    border-color: var(--main-color);
     height: 200px;
     width: 200px;
     position: relative;
