@@ -11,7 +11,8 @@ body {
     justify-content: space-between;
 }
 
-#main-home {
+#main-home,
+#main-profile {
     margin-left: 30%;
 }
 
@@ -19,8 +20,14 @@ i {
     height: 100px;
     width: 100px;
     color: #f7146b;
-    margin-right: 15px;
-}
+    margin-right: 15px; }
+
+main>h1 {
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 5vh 5vw;
+    text-transform: uppercase; }
 
 /*NAVIGATION*/
 
@@ -29,11 +36,9 @@ header>nav {
     height: calc(100% - 65px);
 }
 
-<<<<<<< HEAD
 header>footer>p {
     text-align: center;
     font-weight: 600;
-
 
 }
 
@@ -58,44 +63,23 @@ nav>div>h1 {
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-
+    font-family: "Raleway";
+    color: white;
 }
 
 nav>ul {
-    padding: 100px;
+    padding: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
     text-align: center;
-
-
 }
 
 nav>ul>li {
     font-size: 21px;
-    color: #fff4f8;
-
-
-=======
-nav>img {
-    width: 109px;
-    height: 78px;
-    color: var(--main-color);
-}
-
-nav>h1 {
-    color: var(--tertiary-color);
-}
-
-nav>ul {
-    padding: 130px;
-    color: var(--tertiary-color);
-}
-
-nav>li {
-    font-size: medium;
->>>>>>> 8bbe85d3be77142f029759b87b6b7a9c09ef9393
+    font-family: "Raleway";
+    color: white;
 }
 
 #navBar {
@@ -108,12 +92,6 @@ header>footer {
     background-color: var(--main-color);
     font-family: 'Raleway';
     color: #1D1D1B;
-}
-
-nav,
-h1 li {
-    font-family: "Raleway";
-    color: white;
 }
 
 /*Post*/
@@ -144,10 +122,12 @@ h1 li {
 .thread {
     display: flex;
     flex-direction: column-reverse;
+    margin: 1vh 5vw;
+    gap: 10px;
 }
 
 .post {
-    margin: 1vh 5vw;
+
     display: flex;
     justify-content: flex-start;
     background-color: var(--tertiary-color);
@@ -157,6 +137,15 @@ h1 li {
 
 .post:hover {
     transform: rotate(0.3deg);
+}
+
+.post h2 {
+    font-weight: 700;
+    margin: 0.3em 0;
+}
+
+.post .date {
+    font-size: 0.8em;
 }
 
 .post>sidebar {
@@ -182,6 +171,7 @@ h1 li {
     border-radius: 100%;
     border: solid 1px var(--main-color)
 }
+
 
 .post>.post-box>header>.profile-info>.username {
     font-weight: 900;
@@ -218,20 +208,83 @@ h1 li {
 
 /*button*/
 
-button {
-    font-family: 'Raleway';
-    color: var(--main-color);
-    border-radius: 25px;
-    border-width: 1px;
-    background-color: white;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-weight: 600;
 
+.btn {
+    border: solid;
+    font-size: 0.7em;
+    width: 150px;
+    height: 30px;
+    position: relative;
+
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
 }
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 50px;
+    background-color: var(--main-color);
+    transform: rotate(10deg);
+    top: -80px;
+    left: 20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 60px;
+    background-color: var(--main-color);
+    transform: rotate(10deg);
+    top: 80px;
+    left: -20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    transition: 0s linear;
+    transition-delay: .3s;
+}
+
+.btn:hover:before {
+    top: -20px;
+    left: -20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover:after {
+    top: 10px;
+    left: -23%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover>.btn-content {
+    color: dark;
+    transition: .3s ease-in-out;
+}
+
+.btn .btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-weight: 400;
+    position: relative;
+    z-index: 999;
+    transition: .3s ease-in-out;
+}
+
 
 
 .pencilbutton {
@@ -259,8 +312,7 @@ button {
     width: 250px;
     position: relative;
     bottom: -100px;
-<<<<<<< HEAD
-=======
+
 }
 
 .texteprofil {
@@ -273,7 +325,7 @@ button {
 }
 
 .texteprofil h1 {
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .compteur {
@@ -287,33 +339,3 @@ p.dateprofil {
     font-style: italic;
 }
 
-.lastpost {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-weight: 1000;
-    font-size: 30px;
-    width: 550px;
-
-}
-
-header>nav>img {
-    width: 109px;
-    height: 78px;
-    color: var(--main-color);
-
-}
-
-header>nav>h1 {
-    color: var(--tertiary-color);
-}
-
-header>nav>ul>li {
-    padding: 32px;
-    color: var(--tertiary-color);
-}
-
-header>footer {
-    background-color: var(--main-color);
->>>>>>> 8bbe85d3be77142f029759b87b6b7a9c09ef9393
-}
