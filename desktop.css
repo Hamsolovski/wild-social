@@ -139,7 +139,15 @@ button {
     border-radius: 25px;
     border-width: 1px;
     background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: 600;
+
 }
+
 
 .pencilbutton {
     height: 10px;
@@ -148,26 +156,60 @@ button {
 
 /*profil*/
 
-div,
 .imagedefond {
-    margin: 5px 5px 0px 5px;
+    margin: 10px 10px 0px 10px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background-image: url("assets/img/tennis-2585621_1280.jpg");
-    height: 200px;
-    width: 1000px;
+    height: 250px;
+
 }
 
 .imagedeprofile {
     border-radius: 50%;
     border: solid;
     border-color: #F7146B;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     position: relative;
     bottom: -100px;
 }
+
+.texteprofil {
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 8px;
+}
+
+.texteprofil h1 {
+    font-weight: 1000;
+}
+
+.compteur {
+    display: flex;
+    gap: 30px;
+    font-weight: 800;
+}
+
+p.dateprofil {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.lastpost {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-weight: 1000;
+    font-size: 30px;
+    width: 550px;
+
+}
+
 
 header>nav>img {
     width: 109px;
