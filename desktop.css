@@ -15,6 +15,13 @@ body {
     margin-left: 30%;
 }
 
+i {
+    height: 100px;
+    width: 100px;
+    color: #f7146b;
+    margin-right: 15px;
+}
+
 /*NAVIGATION*/
 
 header>nav {
@@ -22,23 +29,56 @@ header>nav {
     height: calc(100% - 65px);
 }
 
-nav>img {
-    width: 109px;
-    height: 78px;
-    color: #f7146b;
+
+header>footer>p {
+    text-align: center;
+    font-weight: 600;
+
+
 }
 
-nav>h1 {
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 3vh;
+
+}
+
+nav>div>img {
+    width: 70px;
+    height: 78px;
+    color: #f7146b;
+
+}
+
+nav>div>h1 {
     color: #fff4f8;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+
 }
 
 nav>ul {
-    padding: 130px;
-    color: #fff4f8;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+
+
 }
 
-nav>li {
-    font-size: medium;
+nav>ul>li {
+    font-size: 21px;
+    color: #fff4f8;
+
+
+
+
 }
 
 #navBar {
@@ -48,7 +88,7 @@ nav>li {
 }
 
 header>footer {
-    background-color: #f7146b;
+    background-color: var(--main-color);
     font-family: 'Raleway';
     color: #1D1D1B;
 }
@@ -60,11 +100,39 @@ h1 li {
 }
 
 /*Post*/
+.add-a-post {
+    text-align: center;
+    margin: 1vh 5vw;
+    padding: 1px;
+}
+
+.add-a-post>form>textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border: solid, 1px, var(--main-color);
+    width: 100%;
+    resize: none;
+    background-color: lightblue;
+    border-radius: 0 20px 0 0;
+    padding: 1em;
+    color: var(--second-color)
+}
+
+.add-a-post:hover {
+    opacity: 0.80;
+}
+
+.thread {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 .post {
-    margin: 30px;
+    margin: 1vh 5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--tertiary-color);
     border-radius: 20px;
     box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
@@ -128,10 +196,11 @@ h1 li {
 }
 
 .post>.post-box>footer>ul>li:hover {
-    color: #f7146b
+    color: var(--main-color)
 }
 
 /*button*/
+
 
 .btn {
     border: solid;
@@ -139,6 +208,7 @@ h1 li {
     width: 150px;
     height: 30px;
     position: relative;
+
     background-color: white;
     border-radius: 50px;
     overflow: hidden;
@@ -230,11 +300,12 @@ h1 li {
 .imagedeprofile {
     border-radius: 50%;
     border: solid;
-    border-color: #F7146B;
+    border-color: var(--main-color);
     height: 250px;
     width: 250px;
     position: relative;
     bottom: -100px;
+
 }
 
 .texteprofil {
@@ -271,7 +342,6 @@ p.dateprofil {
 
 }
 
-
 header>nav>img {
     width: 109px;
     height: 78px;
@@ -290,4 +360,5 @@ header>nav>ul>li {
 
 header>footer {
     background-color: var(--main-color);
+
 }
