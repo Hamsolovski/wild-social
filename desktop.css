@@ -167,7 +167,15 @@ button {
     border-radius: 25px;
     border-width: 1px;
     background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: 600;
+
 }
+
 
 .pencilbutton {
     height: 10px;
@@ -176,23 +184,22 @@ button {
 
 /*profil*/
 
-div,
 .imagedefond {
-    margin: 5px 5px 0px 5px;
+    margin: 10px 10px 0px 10px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background-image: url("assets/img/tennis-2585621_1280.jpg");
-    height: 200px;
-    width: 1000px;
+    height: 250px;
+
 }
 
 .imagedeprofile {
     border-radius: 50%;
     border: solid;
     border-color: var(--main-color);
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     position: relative;
     bottom: -100px;
 }
