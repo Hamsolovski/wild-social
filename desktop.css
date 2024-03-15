@@ -16,12 +16,18 @@ body {
     margin-left: 30%;
 }
 
-i {
+main i {
     height: 100px;
     width: 100px;
     color: #f7146b;
     margin-right: 15px;
-}
+
+main>h1 {
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 5vh 5vw;
+    text-transform: uppercase;
 
 /*NAVIGATION*/
 
@@ -30,11 +36,9 @@ header>nav {
     height: calc(100% - 65px);
 }
 
-
 header>footer>p {
     text-align: center;
     font-weight: 600;
-
 
 }
 
@@ -59,7 +63,8 @@ nav>div>h1 {
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-
+    font-family: "Raleway";
+    color: white;
 }
 
 nav>ul {
@@ -76,10 +81,6 @@ nav>ul {
 nav>ul>li {
     font-size: 21px;
     color: #fff4f8;
-
-
-
-
 }
 
 #navBar {
@@ -127,10 +128,12 @@ nav h1 li {
 .thread {
     display: flex;
     flex-direction: column-reverse;
+    margin: 1vh 5vw;
+    gap: 10px;
 }
 
 .post {
-    margin: 1vh 5vw;
+
     display: flex;
     justify-content: flex-start;
     background-color: var(--tertiary-color);
@@ -140,6 +143,15 @@ nav h1 li {
 
 .post:hover {
     transform: rotate(0.3deg);
+}
+
+.post h2 {
+    font-weight: 700;
+    margin: 0.3em 0;
+}
+
+.post .date {
+    font-size: 0.8em;
 }
 
 .post>sidebar {
@@ -165,6 +177,7 @@ nav h1 li {
     border-radius: 100%;
     border: solid 1px var(--main-color)
 }
+
 
 .post>.post-box>header>.profile-info>.username {
     font-weight: 900;
@@ -318,7 +331,7 @@ nav h1 li {
 }
 
 .texteprofil h1 {
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .compteur {
@@ -332,12 +345,3 @@ p.dateprofil {
     font-style: italic;
 }
 
-.lastpost {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-weight: 1000;
-    font-size: 30px;
-    width: 550px;
-
-}

@@ -18,7 +18,7 @@ const likes = document.querySelector(".likes");
 const addPost = document.querySelector(".publish-button");
 const newUserPost = document.querySelector("textarea");
 
-
+// Fonction qui crée le HTML de mon post
 function newPost() {
     const newPost = document.createElement("article");
     newPost.className = "post";
@@ -26,8 +26,10 @@ function newPost() {
     <section class="post-box">
         <header>
             <img class="profile-pic" src="${myTestPosts.picture}" alt="" />
+            <section class="profile-info">
             <h2 class="username">${myTestPosts.firstname} ${myTestPosts.lastname}</h2>
             <p class="date">a wildé le ${myTestPosts.date}</p>
+            </section>
         </header>
         <main>
             <img class="pic1" src="" alt="" />
@@ -44,14 +46,24 @@ function newPost() {
     thread.appendChild(newPost);
 };
 
+addPost.style.display = "none";
+
+// Je vérifie que j'ai un input
 newUserPost.addEventListener("input", () => {
     const newMessage = document.querySelector("textarea").value;
     myTestPosts.message = newMessage;
-    return myTestPosts;
+    if (newMessage || newMessage.length !== 0 )
+        addPost.style.display = "initial";
+    else
+        addPost.style.display = "none";
 });
 
 addPost.addEventListener("click", () => {
     newPost();
+    const newMessage = document.querySelector("textarea").value = null
+    addPost.style.display = "none";
 })
+
+
 
 //Compteur de likes
