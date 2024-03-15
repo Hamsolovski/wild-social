@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" href="desktop.css">
+    <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 992px)"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -39,9 +39,9 @@
         <h1>Mon fil</h1>
         <section class="add-a-post">
             <form>
-                <textarea id="post" name="user_post">Mon nouveau message</textarea>
+                <textarea id="post" name="user_post"></textarea>
             </form>
-            <button class="publish-button">Publish</button>
+            <button class="publish-button">Publier</button>
         </section>
         <section class="thread">
             <article class="post">
@@ -49,8 +49,10 @@
                 <section class="post-box">
                     <header>
                         <img class="profile-pic" src="assets/img/cat-img1.jpg" alt="" />
+                        <section class="profile-info">
                         <h2 class="username">Antoine Delalande</h2>
                         <p class="date">a wildé le 26 février 2024</p>
+                        </section>
                     </header>
                     <main>
                         <img class="pic1" src="" alt="" />
