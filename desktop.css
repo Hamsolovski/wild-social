@@ -13,7 +13,7 @@ body {
 
 #main-home,
 #main-profile {
-    margin-left: 30%;
+    margin-left: 26%;
 }
 
 i {
@@ -33,7 +33,7 @@ main>h1 {
 
 header>nav {
     background-color: var(--second-color);
-    height: calc(100% - 65px);
+    height: calc(100% - 100px);
 }
 
 header>footer>p {
@@ -72,14 +72,19 @@ nav>ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 2em;
     text-align: center;
 }
 
 nav>ul>li {
-    font-size: 21px;
-    font-family: "Raleway";
+    font-size: 2em;
+    
+}
+
+nav>ul>li>span {
+    font-size: 1em;
     color: white;
+    font-family: "Raleway";
 }
 
 #navBar {
@@ -92,6 +97,7 @@ header>footer {
     background-color: var(--main-color);
     font-family: 'Raleway';
     color: #1D1D1B;
+    padding: 10px;
 }
 
 /*Post*/
@@ -210,12 +216,12 @@ header>footer {
 
 
 .btn {
-    border: solid;
+    border: solid 1px var(--main-color);
     font-size: 0.7em;
     width: 150px;
     height: 30px;
     position: relative;
-
+    margin: 5px;
     background-color: white;
     border-radius: 50px;
     overflow: hidden;
