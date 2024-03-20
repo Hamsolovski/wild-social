@@ -52,7 +52,7 @@ addPost.style.display = "none";
 newUserPost.addEventListener("input", () => {
     const newMessage = document.querySelector("textarea").value;
     myTestPosts.message = newMessage;
-    if (newMessage || newMessage.length !== 0 )
+    if (newMessage || newMessage.length !== 0)
         addPost.style.display = "initial";
     else
         addPost.style.display = "none";
@@ -67,3 +67,8 @@ addPost.addEventListener("click", () => {
 
 
 //Compteur de likes
+
+
+
+
+    

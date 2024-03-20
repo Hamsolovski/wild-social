@@ -13,21 +13,23 @@ body {
 
 #main-home,
 #main-profile {
-    margin-left: 30%;
+    margin-left: 26%;
 }
 
 i {
     height: 100px;
     width: 100px;
     color: #f7146b;
-    margin-right: 15px; }
+    margin-right: 15px;
+}
 
 main>h1 {
     font-family: 'Raleway';
     font-size: 2em;
     font-weight: 900;
     margin: 5vh 5vw;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+}
 
 /*NAVIGATION*/
 
@@ -209,13 +211,12 @@ header>footer {
 /*button*/
 
 
-.btn {
+.btn  {
     border: solid;
     font-size: 0.7em;
     width: 150px;
     height: 30px;
     position: relative;
-
     background-color: white;
     border-radius: 50px;
     overflow: hidden;
@@ -245,12 +246,14 @@ header>footer {
     top: 80px;
     left: -20%;
     transition: .3s ease-in-out;
+
 }
 
-.btn:hover {
+.btn:hover button {
     background-color: var(--main-color);
     transition: 0s linear;
     transition-delay: .3s;
+
 }
 
 .btn:hover:before {
@@ -266,7 +269,8 @@ header>footer {
 }
 
 .btn:hover>.btn-content {
-    color: dark;
+    color: white;
+    font-weight: 700;
     transition: .3s ease-in-out;
 }
 
@@ -284,7 +288,6 @@ header>footer {
     z-index: 999;
     transition: .3s ease-in-out;
 }
-
 
 
 .pencilbutton {
@@ -338,4 +341,3 @@ p.dateprofil {
     font-weight: 600;
     font-style: italic;
 }
-
