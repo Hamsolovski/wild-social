@@ -1,0 +1,337 @@
+* {
+    --main-color: #f7146b;
+    --second-color: #1d1d1b;
+    --tertiary-color: #fff4f8;
+    font-family: 'Montserrat';
+    color: #1D1D1B;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+#main-home,
+#main-profile {
+    margin: 5%;
+    margin-bottom: 100px;
+}
+
+i {
+    color: #f7146b
+}
+
+main>h1 {
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 3vh 1vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*NAVIGATION*/
+
+header>nav {
+    background-color: var(--second-color);
+}
+
+nav>div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 3vh;
+
+}
+
+nav>div>h1 {
+    color: #fff4f8;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Raleway";
+    color: white;
+}
+
+nav>ul {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+    gap: 5px;
+    font-family: "Raleway";
+}
+
+nav>ul>li>span {
+    font-size: 0.5em;
+    color: white;
+}
+
+#navBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+header>footer {
+    display:none;
+    background-color: var(--main-color);
+    font-family: 'Raleway';
+    color: #1D1D1B;
+}
+
+/*Post*/
+.add-a-post {
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1px;
+}
+
+.add-a-post>form>textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border: solid, 1px, var(--main-color);
+    width: 100%;
+    resize: none;
+    background-color: lightblue;
+    border-radius: 0 20px 0 0;
+    padding: 1em;
+    color: var(--second-color)
+}
+
+.add-a-post:hover {
+    opacity: 0.80;
+}
+
+.thread {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1vh 1vw;
+    gap: 10px;
+}
+
+.post {
+
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--tertiary-color);
+    border-radius: 0 20px 20px 0  ;
+    box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.67);
+}
+
+.post h2 {
+    font-weight: 700;
+    margin: 0.3em 0;
+}
+
+.post .date {
+    font-size: 0.8em;
+}
+
+.post>sidebar {
+    padding: 0.5em;
+    background-color: var(--main-color);
+
+}
+
+.post>.post-box {
+    padding: 1em;
+}
+
+.post>.post-box>header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.post>.post-box>header>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid 1px var(--main-color)
+}
+
+
+.post>.post-box>header>.profile-info>.username {
+    font-weight: 900;
+}
+
+.post>.post-box>footer {
+    margin: 10px 0 0 0;
+    padding: 5px 0;
+}
+
+.post>.post-box>footer>ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.post>.post-box>footer>ul>li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.post>.post-box>footer>ul>li>img {
+    width: 1.4em;
+
+}
+
+.post>.post-box>footer>ul>li:hover {
+    color: var(--main-color)
+}
+
+/*button*/
+
+
+.btn {
+    border: solid 1px var(--main-color);
+    font-size: 0.7em;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 50px;
+    background-color: var(--main-color);
+    transform: rotate(10deg);
+    top: -80px;
+    left: 20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 60px;
+    background-color: var(--main-color);
+    transform: rotate(10deg);
+    top: 80px;
+    left: -20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    transition: 0s linear;
+    transition-delay: .3s;
+}
+
+.btn:hover:before {
+    top: -20px;
+    left: -20%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover:after {
+    top: 10px;
+    left: -23%;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover>.btn-content {
+    color: dark;
+    transition: .3s ease-in-out;
+}
+
+.btn .btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-weight: 400;
+} */
+
+.pencilbutton {
+    height: 10px;
+}
+
+
+/*profil*/
+
+.imagedefond {
+    margin: 5px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("assets/img/tennis-2585621_1280.jpg");
+    height: 50%;
+
+}
+
+.imagedeprofile {
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--main-color);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: -50px;
+
+}
+
+.texteprofil {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 8px;
+}
+
+.texteprofil h1 {
+    font-weight: 900;
+}
+
+.dateprofil {
+    font-size: 0.8em;
+}
+
+.compteur {
+    display: flex;
+    gap: 20px;
+    font-weight: 800;
+}
+
+.compteur>li {
+    font-size: 0.8em;
+}
+
+p.dateprofil {
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
