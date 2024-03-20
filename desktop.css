@@ -31,6 +31,14 @@ main>h1 {
     text-transform: uppercase;
 }
 
+main>h1 {
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 5vh 5vw;
+    text-transform: uppercase;
+}
+
 /*NAVIGATION*/
 
 header>nav {
