@@ -12,7 +12,8 @@ body {
 }
 
 #main-home,
-#main-profile {
+#main-profile,
+#main-galerie {
     margin-left: 26%;
 }
 
@@ -30,15 +31,6 @@ main>h1 {
     margin: 5vh 5vw;
     text-transform: uppercase;
 }
-
-main>h1 {
-    font-family: 'Raleway';
-    font-size: 2em;
-    font-weight: 900;
-    margin: 5vh 5vw;
-    text-transform: uppercase;
-}
-
 
 /*NAVIGATION*/
 
@@ -375,3 +367,32 @@ p.dateprofil {
     font-weight: 600;
     font-style: italic;
 }
+
+/* galerie */
+
+.titregalerie {
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 5vh 5vw;
+    text-transform: uppercase;
+
+}
+
+#main-galerie img {
+    width: 100%;
+    border: solid;
+    border-color: #f7146b;
+}
+
+.photogalerie {
+    margin-left: 7%;
+    display: grid;
+    gap:15px 15px;
+    grid-template-columns:31% 31% 31%;
+    
+        
+      }
+      
+
