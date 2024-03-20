@@ -99,6 +99,7 @@ function getPost(userId) {
 getPost(myUsers);
 
 //Compteur de likes
+
 function Counter() {
     const LikesContainer = document.querySelector("#buttonLike");
     let currentLikes = Number(LikesContainer.innerHTML.replace('<img src="assets/icons/thumbs-up 1.svg" alt="">', '')) + 1
@@ -109,3 +110,4 @@ function Counter() {
     })
 
 }
+
