@@ -65,7 +65,9 @@ addPost.addEventListener("click", () => {
 
 //Charger les posts de mes utilisateurs
 function getPost(userId) {
+
     for (let user of userId) {
+        for (let post of user.messages) {
             const newPost = document.createElement("article");
             newPost.className = "post";
             newPost.innerHTML = `<sidebar></sidebar>
@@ -74,12 +76,12 @@ function getPost(userId) {
                     <img class="profile-pic" src="${user.picture}" alt="" />
                     <section class="profile-info">
                     <h2 class="username">${user.firstname} ${user.lastname}</h2>
-                    <p class="date">a wildé le ${user?.messages[1].date}</p>
+                    <p class="date">a wildé le ${post.date}</p>
                     </section>
                 </header>
                 <main>
                     <img class="pic1" src="" alt="" />
-                    <p class="message">${user.messages[1].message}</p>
+                    <p class="message">${post.message}</p>
                 </main>
                 <footer>
                     <ul class="interactions">
@@ -90,6 +92,7 @@ function getPost(userId) {
                 </footer>
             </section>`
             thread.appendChild(newPost);
+        }  
     }
 };
 
