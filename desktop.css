@@ -111,6 +111,21 @@ header>footer {
 }
 
 /*Post*/
+.publish-button {
+    margin: 10px 0;
+    border: solid 1px var(--main-color);
+    font-size: 0.7em;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.publish-button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
 .add-a-post {
     text-align: center;
     margin: 1vh 5vw;
@@ -131,7 +146,7 @@ header>footer {
     color: var(--second-color)
 }
 
-.add-a-post:hover {
+.add-a-post>form:hover {
     opacity: 0.80;
 }
 
@@ -194,6 +209,7 @@ header>footer {
 }
 
 .post>.post-box>footer {
+    margin: 20px 0 0 0;
     padding: 5px 0;
 }
 
