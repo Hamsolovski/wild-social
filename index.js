@@ -54,8 +54,6 @@ newUserPost.addEventListener("input", () => {
     myTestPosts.message = newMessage;
     if (newMessage || newMessage.length !== 0 )
         addPost.style.display = "initial";
-    else
-        addPost.style.display = "none";
 });
 
 addPost.addEventListener("click", () => {
