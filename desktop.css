@@ -20,14 +20,24 @@ i {
     height: 100px;
     width: 100px;
     color: #f7146b;
-    margin-right: 15px; }
+    margin-right: 15px;
+}
 
 main>h1 {
     font-family: 'Raleway';
     font-size: 2em;
     font-weight: 900;
     margin: 5vh 5vw;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+}
+
+main>h1 {
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 5vh 5vw;
+    text-transform: uppercase;
+}
 
 /*NAVIGATION*/
 
@@ -344,4 +354,3 @@ p.dateprofil {
     font-weight: 600;
     font-style: italic;
 }
-

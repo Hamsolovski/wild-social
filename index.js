@@ -37,7 +37,7 @@ function newPost() {
         </main>
         <footer>
             <ul class="interactions">
-                <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
+                <li  id="buttonLike" class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
                 <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
                 <li class="comments"><img src="assets/icons/comment 1.svg" alt="">0</li>
             </ul>
@@ -65,3 +65,13 @@ addPost.addEventListener("click", () => {
 
 
 //Compteur de likes
+function Counter() {
+    const LikesContainer = document.querySelector("#buttonLike");
+    let currentLikes = Number(LikesContainer.innerHTML.replace('<img src="assets/icons/thumbs-up 1.svg" alt="">', '')) + 1
+
+    LikesContainer.innerHTML = '<img src="assets/icons/thumbs-up 1.svg" alt="">' + currentLikes
+    addLikes.addEventListener("click", () => {
+        Counter();
+    })
+
+}
