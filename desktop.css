@@ -39,6 +39,7 @@ main>h1 {
     text-transform: uppercase;
 }
 
+
 /*NAVIGATION*/
 
 header>nav {
@@ -111,6 +112,21 @@ header>footer {
 }
 
 /*Post*/
+.publish-button {
+    margin: 10px 0;
+    border: solid 1px var(--main-color);
+    font-size: 0.7em;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.publish-button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
 .add-a-post {
     text-align: center;
     margin: 1vh 5vw;
@@ -131,7 +147,7 @@ header>footer {
     color: var(--second-color)
 }
 
-.add-a-post:hover {
+.add-a-post>form:hover {
     opacity: 0.80;
 }
 
@@ -194,6 +210,7 @@ header>footer {
 }
 
 .post>.post-box>footer {
+    margin: 20px 0 0 0;
     padding: 5px 0;
 }
 
@@ -225,12 +242,14 @@ header>footer {
 /*button*/
 
 
+
 .btn {
     border: solid 1px var(--main-color);
     font-size: 0.7em;
     width: 150px;
     height: 30px;
     position: relative;
+
     margin: 5px;
     background-color: white;
     border-radius: 50px;
@@ -261,12 +280,14 @@ header>footer {
     top: 80px;
     left: -20%;
     transition: .3s ease-in-out;
+
 }
 
-.btn:hover {
+.btn:hover button {
     background-color: var(--main-color);
     transition: 0s linear;
     transition-delay: .3s;
+
 }
 
 .btn:hover:before {
@@ -282,7 +303,8 @@ header>footer {
 }
 
 .btn:hover>.btn-content {
-    color: dark;
+    color: white;
+    font-weight: 700;
     transition: .3s ease-in-out;
 }
 
@@ -300,7 +322,6 @@ header>footer {
     z-index: 999;
     transition: .3s ease-in-out;
 }
-
 
 
 .pencilbutton {

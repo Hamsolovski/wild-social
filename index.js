@@ -1,12 +1,13 @@
+
 //Post types
 
 const myTestPosts =
 {
-    picture: "assets/img/cat-img2.jpg",
-    firstname: "Toto",
-    lastname: "Test",
-    date: "le 14 mars 2024",
-    message: "Coucou, c'est Toto. Voilà du lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ut lectus quis posuere. Integer non sapien iaculis, efficitur nunc ac, dignissim felis. Ut maximus libero eu libero malesuada, ut malesuada sapien ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum sed vehicula neque. Duis sit amet lorem nec felis malesuada gravida. Donec tristique enim a arcu placerat facilisis. Etiam a quam ex. ",
+    picture: "/assets/img/dog-7134183_1280.jpg",
+    firstname: "Tidus",
+    lastname: "Lambert",
+    date: new Date().toLocaleDateString(),
+    message: `Coucou, c'est Tidus. Je suis trop content d'être avec de nouveaux gens.`
 }
 
 
@@ -52,7 +53,7 @@ addPost.style.display = "none";
 newUserPost.addEventListener("input", () => {
     const newMessage = document.querySelector("textarea").value;
     myTestPosts.message = newMessage;
-    if (newMessage || newMessage.length !== 0 )
+    if (newMessage || newMessage.length !== 0)
         addPost.style.display = "initial";
 });
 
@@ -62,9 +63,43 @@ addPost.addEventListener("click", () => {
     addPost.style.display = "none";
 })
 
+//Charger les posts de mes utilisateurs
+function getPost(userId) {
 
+    for (let user of userId) {
+        for (let post of user.messages) {
+            const newPost = document.createElement("article");
+            newPost.className = "post";
+            newPost.innerHTML = `<sidebar></sidebar>
+            <section class="post-box">
+                <header>
+                    <img class="profile-pic" src="${user.picture}" alt="" />
+                    <section class="profile-info">
+                    <h2 class="username">${user.firstname} ${user.lastname}</h2>
+                    <p class="date">a wildé le ${post.date}</p>
+                    </section>
+                </header>
+                <main>
+                    <img class="pic1" src="" alt="" />
+                    <p class="message">${post.message}</p>
+                </main>
+                <footer>
+                    <ul class="interactions">
+                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
+                        <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
+                        <li class="comments"><img src="assets/icons/comment 1.svg" alt="">0</li>
+                    </ul>
+                </footer>
+            </section>`
+            thread.appendChild(newPost);
+        }  
+    }
+};
+
+getPost(myUsers);
 
 //Compteur de likes
+
 function Counter() {
     const LikesContainer = document.querySelector("#buttonLike");
     let currentLikes = Number(LikesContainer.innerHTML.replace('<img src="assets/icons/thumbs-up 1.svg" alt="">', '')) + 1
@@ -75,3 +110,4 @@ function Counter() {
     })
 
 }
+

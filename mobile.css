@@ -96,7 +96,6 @@ header>footer {
     text-align: center;
     margin: 1vh 1vw;
     padding: 1px;
-    width: 90vw;
 }
 
 .add-a-post>form>textarea {
@@ -172,6 +171,7 @@ header>footer {
 }
 
 .post>.post-box>footer {
+    margin: 10px 0 0 0;
     padding: 5px 0;
 }
 
