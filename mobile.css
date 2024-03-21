@@ -64,16 +64,20 @@ nav>ul {
 }
 
 nav>ul>li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.3em;
-    gap: 5px;
     font-family: "Raleway";
 }
 
-nav>ul>li>span {
-    font-size: 0.5em;
+nav>ul>li>a>i {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+nav>ul>li>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
     color: white;
 }
 
@@ -98,18 +102,20 @@ header>footer {
     padding: 1px;
 }
 
-.add-a-post>form>textarea {
+.add-a-post>form>label>textarea {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    border: solid, 1px, var(--main-color);
     width: 100%;
     resize: none;
-    background-color: lightblue;
+    background-color: rgb(207, 237, 247);
+    border: solid, 1px, black;
     border-radius: 0 20px 0 0;
     padding: 1em;
-    color: var(--second-color)
+    color: var(--second-color);
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 .add-a-post:hover {
