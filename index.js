@@ -14,8 +14,6 @@ const myTestPosts =
 //Nouveau post
 const thread = document.querySelector(".thread");
 const post = document.querySelectorAll(".post");
-const interactions = document.querySelector(".interactions");
-const likes = document.querySelector(".likes");
 const addPost = document.querySelector(".publish-button");
 const newUserPost = document.querySelector("textarea");
 
@@ -38,9 +36,9 @@ function newPost() {
         </main>
         <footer>
             <ul class="interactions">
-                <li  id="buttonLike" class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
+                <li id="buttonLike" class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
                 <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
-                <li class="comments"><img src="assets/icons/comment 1.svg" alt="">0</li>
+                <li class="comments"><img src="assets/icons/comment 1.svg" alt=""><span class="commentCounter">0</span></li>
             </ul>
         </footer>
     </section>`
@@ -48,6 +46,11 @@ function newPost() {
 };
 
 addPost.style.display = "none";
+
+newUserPost.addEventListener("click", () => {
+    const emptyForm = document.querySelector("textarea");
+    emptyForm.innerText = "";
+})
 
 // Je vérifie que j'ai un input
 newUserPost.addEventListener("input", () => {
@@ -59,13 +62,14 @@ newUserPost.addEventListener("input", () => {
 
 addPost.addEventListener("click", () => {
     newPost();
-    const newMessage = document.querySelector("textarea").value = null
+    getLikes();
+    getComments();
+    const newMessage = document.querySelector("textarea").value = "Ecris ton message ici copain"
     addPost.style.display = "none";
 })
 
 //Charger les posts de mes utilisateurs
 function getPost(userId) {
-
     for (let user of userId) {
         for (let post of user.messages) {
             const newPost = document.createElement("article");
@@ -85,9 +89,9 @@ function getPost(userId) {
                 </main>
                 <footer>
                     <ul class="interactions">
-                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
+                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt=""><span class="likeCounter">0</span></li>
                         <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
-                        <li class="comments"><img src="assets/icons/comment 1.svg" alt="">0</li>
+                        <li class="comments"><img src="assets/icons/comment 1.svg" alt=""><span class="commentCounter">0</span></li>
                     </ul>
                 </footer>
             </section>`
@@ -100,14 +104,34 @@ getPost(myUsers);
 
 //Compteur de likes
 
-function Counter() {
-    const LikesContainer = document.querySelector("#buttonLike");
-    let currentLikes = Number(LikesContainer.innerHTML.replace('<img src="assets/icons/thumbs-up 1.svg" alt="">', '')) + 1
 
-    LikesContainer.innerHTML = '<img src="assets/icons/thumbs-up 1.svg" alt="">' + currentLikes
-    addLikes.addEventListener("click", () => {
-        Counter();
-    })
+
+function getLikes() {
+    const likes = document.querySelectorAll(".likes")
+    for (let like of likes) {
+        like.onclick = function () {
+            const counter = like.querySelector(".likeCounter")
+            let myCounter = Number(counter.textContent);
+            myCounter++
+            counter.textContent = myCounter;
+        }
+    }
+
 
 }
 
+//Commentaires
+function getComments() {
+    const comments = document.querySelectorAll(".comments");
+    for (let comment of comments) {
+        comment.addEventListener("click", function () {
+            const commentCounter = comment.querySelector('.commentCounter');
+            let myCounter = Number(commentCounter.innerText);
+            myCounter++;
+            commentCounter.textContent = myCounter;
+        })
+    }
+}
+
+getLikes();
+getComments();

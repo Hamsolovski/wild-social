@@ -92,10 +92,11 @@ nav>ul>li {
 
 }
 
-nav>ul>li>a>span {
+nav>ul>li>a {
     font-size: 1em;
     color: white;
     font-family: "Raleway";
+    text-decoration: none;
 }
 
 #navBar {
@@ -133,18 +134,21 @@ header>footer {
     padding: 1px;
 }
 
-.add-a-post>form>textarea {
+
+.add-a-post>form>label>textarea {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    border: solid, 1px, var(--main-color);
     width: 100%;
     resize: none;
-    background-color: lightblue;
+    background-color: rgb(207, 237, 247);
+    border: solid, 1px, black;
     border-radius: 0 20px 0 0;
     padding: 1em;
-    color: var(--second-color)
+    color: var(--second-color);
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 .add-a-post>form:hover {
