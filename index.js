@@ -108,15 +108,15 @@ getPost(myUsers);
 
 function getLikes() {
     const likes = document.querySelectorAll(".likes")
-    for (let like of likes){
-        like.onclick = function () { 
+    for (let like of likes) {
+        like.onclick = function () {
             const counter = like.querySelector(".likeCounter")
             let myCounter = Number(counter.textContent);
             myCounter++
             counter.textContent = myCounter;
         }
     }
-    
+
 
 }
 
