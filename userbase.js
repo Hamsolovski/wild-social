@@ -7,11 +7,13 @@ const myUsers = [
         messages: [
             {
                 date: "10/02/2024",
-                message: `Salut tout le monde, moi c'est Toto. J'espère devenir un grand développeur !`
+                message: `Salut tout le monde, moi c'est Toto. J'espère devenir un grand développeur !`,
+                likes: 74,
             },
             {
                 date: "10/02/2024",
-                message: `Trop cool la Wild, en plus,  le café est excellent.`
+                message: `Trop cool la Wild, en plus,  le café est excellent.`,
+                likes: 10
             },
         ]
     },
@@ -23,11 +25,13 @@ const myUsers = [
         messages: [
             {
                 date: "10/02/2024",
-                message: `Rolala, y a tellement de nouveaux humains sur le campus aujourd'hui !!! Je me demande combien vont bien vouloir me lancer une balle... TROP HATE 🥎🥎🥎`
+                message: `Rolala, y a tellement de nouveaux humains sur le campus aujourd'hui !!! Je me demande combien vont bien vouloir me lancer une balle... TROP HATE 🥎🥎🥎`,
+                likes: 124
             },
             {
                 date: "13/02/2024",
-                message: `Qu'est-ce que je kiffe quand ils se mettent en cercle ! Je me mets au milieu, je fais trois tours sur moi-même, et je donne la balle et BIM, y en a un qui me la lance !`
+                message: `Qu'est-ce que je kiffe quand ils se mettent en cercle ! Je me mets au milieu, je fais trois tours sur moi-même, et je donne la balle et BIM, y en a un qui me la lance !`,
+                likes: 16
             },
         ]
     },
@@ -39,11 +43,13 @@ const myUsers = [
         messages: [
             {
                 date: "14/02/2024",
-                message: `SIGNATURES S'IL VOUS PLAIT`
+                message: `SIGNATURES S'IL VOUS PLAIT`,
+                likes: 1
             },
             {
                 date: "14/02/2024",
-                message: `Quelqu'un veut se faire un Fortnite ?`
+                message: `Quelqu'un veut se faire un Fortnite ?`,
+                likes: 24
             },
 
 

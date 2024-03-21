@@ -89,7 +89,7 @@ function getPost(userId) {
                 </main>
                 <footer>
                     <ul class="interactions">
-                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt=""><span class="likeCounter">0</span></li>
+                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt=""><span class="likeCounter">${post.likes}</span></li>
                         <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
                         <li class="comments"><img src="assets/icons/comment 1.svg" alt=""><span class="commentCounter">0</span></li>
                     </ul>
