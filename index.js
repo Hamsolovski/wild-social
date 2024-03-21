@@ -92,7 +92,7 @@ function getPost(userId) {
                 </footer>
             </section>`
             thread.appendChild(newPost);
-        }  
+        }
     }
 };
 
