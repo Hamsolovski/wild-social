@@ -17,13 +17,6 @@ body {
     margin-left: 26%;
 }
 
-i {
-    height: 100px;
-    width: 100px;
-    color: #f7146b;
-    margin-right: 15px;
-}
-
 main>h1 {
     font-family: 'Raleway';
     font-size: 2em;
@@ -45,21 +38,19 @@ header>footer>p {
 
 }
 
+nav i {
+    height: 100px;
+    width: 100px;
+    color: #f7146b;
+    margin-right: 15px;
+}
+
 nav>div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding-top: 3vh;
-
-}
-
-nav>div>img {
-    width: 70px;
-    height: 78px;
-    color: #f7146b;
-
-
 
 }
 
@@ -116,7 +107,7 @@ header>footer {
 .publish-button {
     margin: 10px 0;
     border: solid 1px var(--main-color);
-    font-size: 0.7em;
+    font-size: 1em;
     width: 150px;
     height: 30px;
     background-color: white;
@@ -234,18 +225,18 @@ header>footer {
     font-weight: 900;
 }
 
-.post>.post-box>footer>ul>li>img {
-    width: 1.4em;
+.post>.post-box>footer>ul>li>i {
+    font-size: 1em;
 
 }
 
-.post>.post-box>footer>ul>li:hover {
-    color: var(--main-color)
+.post>.post-box>footer>ul>li>i:hover {
+    color: var(--main-color);
+    transform: scale(1.2);
+
 }
 
 /*button*/
-
-
 
 .btn {
     border: solid 1px var(--main-color);
@@ -405,6 +396,3 @@ p.dateprofil {
     grid-template-columns:31% 31% 31%;
     
        } 
-      
-      
-

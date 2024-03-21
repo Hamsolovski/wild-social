@@ -1,13 +1,10 @@
-
-//Post types
-
 const myTestPosts =
 {
     picture: "/assets/img/dog-7134183_1280.jpg",
     firstname: "Tidus",
     lastname: "Lambert",
     date: new Date().toLocaleDateString(),
-    message: `Coucou, c'est Tidus. Je suis trop content d'être avec de nouveaux gens.`
+    message: ""
 }
 
 
@@ -36,9 +33,8 @@ function newPost() {
         </main>
         <footer>
             <ul class="interactions">
-                <li id="buttonLike" class="likes"><img src="assets/icons/thumbs-up 1.svg" alt="">0</li>
-                <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
-                <li class="comments"><img src="assets/icons/comment 1.svg" alt=""><span class="commentCounter">0</span></li>
+                <li class="likes"><i class="bi bi-hand-thumbs-up-fill"></i><span class="likeCounter">0</span></li>
+                <li class="comments"><i class="bi bi-chat-left-dots-fill"></i><span class="commentCounter">0</span></span></li>
             </ul>
         </footer>
     </section>`
@@ -46,11 +42,6 @@ function newPost() {
 };
 
 addPost.style.display = "none";
-
-newUserPost.addEventListener("click", () => {
-    const emptyForm = document.querySelector("textarea");
-    emptyForm.innerText = "";
-})
 
 // Je vérifie que j'ai un input
 newUserPost.addEventListener("input", () => {
@@ -64,8 +55,8 @@ addPost.addEventListener("click", () => {
     newPost();
     getLikes();
     getComments();
-    const newMessage = document.querySelector("textarea").value = "Ecris ton message ici copain"
     addPost.style.display = "none";
+    document.querySelector("textarea").value = "";
 })
 
 //Charger les posts de mes utilisateurs
@@ -89,9 +80,8 @@ function getPost(userId) {
                 </main>
                 <footer>
                     <ul class="interactions">
-                        <li class="likes"><img src="assets/icons/thumbs-up 1.svg" alt=""><span class="likeCounter">0</span></li>
-                        <li class="shares"><img src="assets/icons/share 1.svg" alt="">0</li>
-                        <li class="comments"><img src="assets/icons/comment 1.svg" alt=""><span class="commentCounter">0</span></li>
+                        <li class="likes"><i class="bi bi-hand-thumbs-up-fill"></i><span class="likeCounter">${post.likes}</span></li>
+                        <li class="comments"><i class="bi bi-chat-left-dots-fill"></i><span class="commentCounter">0</span></li>
                     </ul>
                 </footer>
             </section>`
@@ -101,37 +91,3 @@ function getPost(userId) {
 };
 
 getPost(myUsers);
-
-//Compteur de likes
-
-
-
-function getLikes() {
-    const likes = document.querySelectorAll(".likes")
-    for (let like of likes) {
-        like.onclick = function () {
-            const counter = like.querySelector(".likeCounter")
-            let myCounter = Number(counter.textContent);
-            myCounter++
-            counter.textContent = myCounter;
-        }
-    }
-
-
-}
-
-//Commentaires
-function getComments() {
-    const comments = document.querySelectorAll(".comments");
-    for (let comment of comments) {
-        comment.addEventListener("click", function () {
-            const commentCounter = comment.querySelector('.commentCounter');
-            let myCounter = Number(commentCounter.innerText);
-            myCounter++;
-            commentCounter.textContent = myCounter;
-        })
-    }
-}
-
-getLikes();
-getComments();
