@@ -392,8 +392,7 @@ p.dateprofil {
 .photogalerie {
     margin-left: 7%;
     display: grid;
-    gap: 15px 15px;
-    grid-template-columns: 31% 31% 31%;
-
-
-}
+    gap:15px 15px;
+    grid-template-columns:31% 31% 31%;
+    
+       } 
