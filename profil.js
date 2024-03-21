@@ -80,4 +80,18 @@ editProfile.addEventListener("click", function () {
     //   newImage.src = "assets/img/cat-img2.jpg";
       
 });
+          </section>`;
+      thread.appendChild(newPost);
+    }
+  }
+}
 
+//getUserPost(myUsers[1]);
+
+//editProfile.addEventListener("click", function () {
+  //newProfile.textContent = "Mickael Beaugrand";
+  //newCompteur.textContent = "0 Abonnements 0 Abonnés  ";
+  //newImage.src = "assets/img/cat-img2.jpg";
+  //newBackground.style.backgroundImage =
+    //'url("assets/img/42848087-lignes-de-code-numérique-bleu.jpg")';
+//});
