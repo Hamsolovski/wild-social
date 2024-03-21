@@ -33,6 +33,11 @@ const myUsers = [
                 message: `Qu'est-ce que je kiffe quand ils se mettent en cercle ! Je me mets au milieu, je fais trois tours sur moi-même, et je donne la balle et BIM, y en a un qui me la lance !`,
                 likes: 16
             },
+            {
+                date: "13/02/2024",
+                message: `J'ADORE LES GENS`,
+                likes: 18
+            },
         ]
     },
 
@@ -49,6 +54,26 @@ const myUsers = [
             {
                 date: "14/02/2024",
                 message: `Quelqu'un veut se faire un Fortnite ?`,
+                likes: 24
+            },
+
+
+        ]
+    },
+
+    {
+        picture: "assets/img/cat-img2.jpg",
+        firstname: "Mickaël",
+        lastname: "Beaugrand",
+        messages: [
+            {
+                date: "14/03/2024",
+                message: `Je crois qu'il me faut un autre café`,
+                likes: 1
+            },
+            {
+                date: "20/03/2024",
+                message: `HTML & CSS, ça va. JS ça va pas.`,
                 likes: 24
             },
 

@@ -19,10 +19,6 @@ body {
     margin-bottom: 100px;
 }
 
-i {
-    color: #f7146b
-}
-
 main>h1 {
     font-family: 'Raleway';
     font-size: 2em;
@@ -36,6 +32,10 @@ main>h1 {
 
 header>nav {
     background-color: var(--second-color);
+}
+
+nav i {
+    color: #f7146b;
 }
 
 nav>div {
@@ -122,6 +122,16 @@ header>footer {
     opacity: 0.80;
 }
 
+.publish-button {
+    margin: 10px 0;
+    border: solid 1px var(--main-color);
+    font-size: 1em;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
 .thread {
     display: flex;
     flex-direction: column-reverse;
@@ -185,7 +195,7 @@ header>footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .post>.post-box>footer>ul>li {
