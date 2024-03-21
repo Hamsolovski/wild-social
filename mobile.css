@@ -58,10 +58,10 @@ nav>div>h1 {
 }
 
 nav>ul {
-    padding: 5%;
+    padding: 1%;
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-evenly;
+   
 }
 
 nav>ul>li {
@@ -78,7 +78,7 @@ nav>ul>li>a {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 80%;
     color: white;
 }
 
@@ -292,8 +292,8 @@ header>footer {
     font-weight: 400;
 }
 
-*/ .pencilbutton {
-    height: 10px;
+.pencilbutton {
+    width: 10%;
 }
 
 
@@ -358,6 +358,7 @@ p.dateprofil {
 
 .titregalerie {
     display: flex;
+    justify-content: center;
     font-family: 'Raleway';
     font-size: 2em;
     font-weight: 900;
