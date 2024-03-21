@@ -47,6 +47,11 @@ function newPost() {
 
 addPost.style.display = "none";
 
+newUserPost.addEventListener("click", () => {
+    const emptyForm = document.querySelector("textarea");
+    emptyForm.innerText = "";
+})
+
 // Je vérifie que j'ai un input
 newUserPost.addEventListener("input", () => {
     const newMessage = document.querySelector("textarea").value;
@@ -59,13 +64,12 @@ addPost.addEventListener("click", () => {
     newPost();
     getLikes();
     getComments();
-    const newMessage = document.querySelector("textarea").value = null
+    const newMessage = document.querySelector("textarea").value = "Ecris ton message ici copain"
     addPost.style.display = "none";
 })
 
 //Charger les posts de mes utilisateurs
 function getPost(userId) {
-
     for (let user of userId) {
         for (let post of user.messages) {
             const newPost = document.createElement("article");
