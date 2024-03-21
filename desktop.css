@@ -230,13 +230,13 @@ header>footer {
 
 }
 
-.post>.post-box>footer>ul>li:hover {
-    color: var(--main-color)
+.post>.post-box>footer>ul>li>i:hover {
+    color: var(--main-color);
+    transform: scale(1.2);
+
 }
 
 /*button*/
-
-
 
 .btn {
     border: solid 1px var(--main-color);

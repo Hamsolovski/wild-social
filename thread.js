@@ -1,3 +1,11 @@
+const myTestPosts =
+{
+    picture: "/assets/img/dog-7134183_1280.jpg",
+    firstname: "Tidus",
+    lastname: "Lambert",
+    date: new Date().toLocaleDateString(),
+    message: ""
+}
 
 
 //Nouveau post
@@ -48,6 +56,7 @@ addPost.addEventListener("click", () => {
     getLikes();
     getComments();
     addPost.style.display = "none";
+    document.querySelector("textarea").value = "";
 })
 
 //Charger les posts de mes utilisateurs
