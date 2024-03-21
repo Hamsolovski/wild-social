@@ -80,11 +80,6 @@ editProfile.addEventListener("click", function () {
     //   newImage.src = "assets/img/cat-img2.jpg";
       
 });
-          </section>`;
-      thread.appendChild(newPost);
-    }
-  }
-}
 
 //getUserPost(myUsers[1]);
 

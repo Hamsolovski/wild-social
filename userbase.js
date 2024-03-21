@@ -30,7 +30,7 @@ const myUsers = [
             },
             {
                 date: "13/02/2024",
-                message: `Qu'est-ce que je kiffe quand ils se mettent en rond ! Je me mets au milieu, je fais trois tours sur moi-même, et je donne la balle et BIM, y en a un qui me la lance !`,
+                message: `Qu'est-ce que je kiffe quand ils font les daily ! Ils se mettent tous en rond. Je me mets au milieu, je fais trois tours sur moi-même, et je donne la balle et BIM, y en a un qui me la lance !`,
                 likes: 16
             },
             {
@@ -137,11 +137,44 @@ const myUsers = [
             {
                 date: "30/03/2024",
                 message: `Hot take : Apple > Windows`,
-                likes: 200 
+                likes: 200
             }
 
-            
+
 
         ]
-    }
+    },
+
+    {
+        picture: "https://storage.googleapis.com/quest_editor_uploads/Rt2cfbM2cZmJpgjtoTzuOjABuhpoSFkd.png",
+        firstname: "Alexandre",
+        lastname: "Renard",
+        messages: [
+            {
+                date: "31/03/2024",
+                message: `Bravo pour ce bricolage 👹🧐😜 `,
+                likes: 666
+            }
+
+
+
+        ]
+    },
+
+    {
+        picture: "https://storage.googleapis.com/quest_editor_uploads/KTBbjurxLMhWSruKcx5mBAfUc1Qq2G8F.jpg",
+        firstname: "Vincent",
+        lastname: "Cantonnet",
+        messages: [
+            {
+                date: "01/04/2024",
+                message: `Bravo pour ce super site`,
+                likes: 25
+            }
+
+
+
+        ]
+    },
+
 ]
