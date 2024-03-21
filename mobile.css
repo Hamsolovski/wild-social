@@ -14,7 +14,8 @@ body {
 }
 
 #main-home,
-#main-profile {
+#main-profile,
+#main-galerie {
     margin: 5%;
     margin-bottom: 100px;
 }
@@ -335,3 +336,29 @@ p.dateprofil {
     font-style: italic;
     text-align: center;
 }
+
+/* galerie */
+
+.titregalerie {
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 900;
+    margin: 1vh 23vw;
+    text-transform: uppercase;
+
+}
+
+#main-galerie img {
+    width: 100%;
+    border: solid;
+    border-color: #f7146b;
+}
+
+.photogalerie {
+    display: grid;
+    gap:15px 15px;
+    grid-template-columns:30% 30% 30%;
+    
+        
+      }
