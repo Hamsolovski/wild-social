@@ -32,6 +32,7 @@ function getUserPost(user) {{
                       <li class="likes"><i class="bi bi-hand-thumbs-up-fill"></i><span class="likeCounter">${post.likes}</span></li>
                       <li class="comments"><i class="bi bi-chat-left-dots-fill"></i><span class="commentCounter">0</span></li>
                   </ul>
+                  <input id="inputComment" class="inputHidden" type="text">
               </footer>
           </section>`
           thread.appendChild(newPost);
