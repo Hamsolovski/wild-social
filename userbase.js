@@ -129,6 +129,22 @@ const myUsers = [
 
         ]
     },
+
+    {
+        picture: "https://avatars.githubusercontent.com/u/161059235?s=300&v=4",
+        firstname: "Adam",
+        lastname: "Boulkhedert",
+        messages: [
+            {
+                date: "26/03/2024",
+                message: `Tuer ou être Tué`,
+                likes: 1000000
+            }
+
+
+
+        ]
+    },
     {
         picture: "assets/imgprofil/Sibadprofile.jpg",
         firstname: "Adam",
@@ -142,6 +158,21 @@ const myUsers = [
 
 
 
+        ]
+    },
+
+    
+
+    {
+        picture: "assets/imgprofil/IMG_20240320_142320.jpg",
+        firstname: "Coline",
+        lastname: "Grosso",
+        messages: [
+            {
+                date: "30/03/2024",
+                message: `Notre réseau social est mieux.`,
+                likes: 1
+            }
         ]
     },
 
@@ -176,5 +207,23 @@ const myUsers = [
 
         ]
     },
+
+    {
+        picture: "assets/imgprofil/IMG_20240320_142158.jpg",
+        firstname: "Erwan",
+        lastname: "Bataille",
+        messages: [
+            {
+                date: "02/04/2024",
+                message: `Content de ce premier projet ! Ca m'a permis d'améliorer mes compétences ✌️`,
+                likes: 102
+            }
+
+
+
+        ]
+    },
+
+    
 
 ]
