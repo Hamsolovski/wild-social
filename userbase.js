@@ -82,7 +82,7 @@ const myUsers = [
     },
 
     {
-        picture: "assets/imgprofil/IMG_20240320_142152.jpg",
+        picture: "assets/imgprofil/antoine_profile.jpg",
         firstname: "Antoine",
         lastname: "Delalande",
         messages: [
@@ -97,7 +97,23 @@ const myUsers = [
     },
 
     {
-        picture: "assets/imgprofil/IMG_20240320_142225.jpg",
+        picture: "assets/imgprofil/yann_profile.jpg",
+        firstname: "Yann",
+        lastname: "Lahellec",
+        messages: [
+            {
+                date: "21/03/2024",
+                message: `Coline a toujours raison. Sauf sur Figma.`,
+                likes: 20
+            }
+
+
+
+        ]
+    },
+
+    {
+        picture: "assets/imgprofil/manue_profile.jpg",
         firstname: "Manue",
         lastname: "Curiant",
         messages: [
@@ -111,7 +127,7 @@ const myUsers = [
         ]
     },
     {
-        picture: "assets/imgprofil/IMG_20240320_142138.jpg",
+        picture: "assets/imgprofil/anthony_profile.jpg",
         firstname: "Anthony",
         lastname: "Dufrenot",
         messages: [
@@ -164,7 +180,7 @@ const myUsers = [
     
 
     {
-        picture: "assets/imgprofil/IMG_20240320_142320.jpg",
+        picture: "assets/imgprofil/coline_profile.jpg",
         firstname: "Coline",
         lastname: "Grosso",
         messages: [
@@ -209,7 +225,7 @@ const myUsers = [
     },
 
     {
-        picture: "assets/imgprofil/IMG_20240320_142158.jpg",
+        picture: "assets/imgprofil/erwan_profile.jpg",
         firstname: "Erwan",
         lastname: "Bataille",
         messages: [
