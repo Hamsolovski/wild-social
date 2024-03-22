@@ -51,17 +51,17 @@ editProfile.addEventListener("click", function () {
             <input id="profile_name" name="profile_name" placeholder="Prénom Nom"></textarea>
         </label>
         </form>`
-    console.log(document.querySelector("#profile_name"));
     addEventListener("submit", function (event) {
         const newProfileId = document.querySelector("#profile_name").value;
         event.preventDefault();
         newProfile.innerHTML = `<h1 class="nameprofile">${newProfileId}</h1>`
         threadName.innerHTML = `<h1 class="lastpost">LES DERNIERS POST DE ${newProfileId}</h1>`
         newImage.src = "assets/img/cat-img2.jpg";
-        const username = thread.querySelectorAll(".username")
-        const profilePic = thread.querySelectorAll(".profile-pic")
         newBackground.style.backgroundImage =
         'url("assets/img/42848087-lignes-de-code-numérique-bleu.jpg")';
+        const username = thread.querySelectorAll(".username")
+        const profilePic = thread.querySelectorAll(".profile-pic")
+        
 
         for (let element of username) {
             element.outerHTML = `<h2 class="username">${newProfileId}</h2>`;

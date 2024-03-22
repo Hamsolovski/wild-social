@@ -1,6 +1,6 @@
 const myTestPosts =
 {
-    picture: "/assets/img/dog-7134183_1280.jpg",
+    picture: "assets/img/dog-7134183_1280.jpg",
     firstname: "Tidus",
     lastname: "Lambert",
     date: new Date().toLocaleDateString(),
