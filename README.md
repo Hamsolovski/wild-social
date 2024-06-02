@@ -1,8 +1,39 @@
-# wild-social
-Prototype d'un réseau social du campus de la Wild Code School : il intègre un fil de posts, une page profil, et plusieurs interactions comme la possibilité de liker et commenter des posts.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://hamsolovski.github.io/wild-social/">
+    <img src="https://hamsolovski.github.io/wild-social/assets/logo.svg" alt="out-logo" width="80" height="80">
+  </a>
 
-La maquette du projet est disponible ici : https://www.figma.com/file/AHne4dUUWgS5Q6tytvyKaQ/Wild-Social?type=design&node-id=31%3A179&mode=design&t=64PPKtWjsHoyrNBj-1
+<h3 align="center">Wild Social, the social network for wilders</h3>
 
-La charte graphique ici : https://www.figma.com/file/AHne4dUUWgS5Q6tytvyKaQ/Wild-Social?type=design&node-id=31%3A29&mode=design&t=VAG5J30okLPljyog-1
+  <p align="center">
+    <a href="https://out-omega-dun.vercel.app/">Check the app</a>
+  </p>
+</div>
 
-La présentation ici : https://slides.com/mickaelbeaugrand/deck
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+Wild Social is a social network made for wilders - students and teachers at Wild Code School Paris. Its main features are a wall allowing wilders to chat and a customizable profile page
+
+This project is the first I made during my studies at Wild Code School. Our aim was to build a static website using HTML and CSS, and a bit of Javascript.
+
+### Built With 
+HTML5 - CSS3 - Javascript
+
+## License
+
+Distributed under the MIT License
+
+<!-- CONTACT -->
+## Contact
+Antoine Delalande - ant.delalande@gmail.com
+
+Project Link: [https://github.com/Hamsolovski/](https://github.com/Hamsolovski/wild-social)
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Mickaël Beaugrand](https://github.com/Micka90)
+* [Erwan Bataille](https://github.com/Erwan60)
