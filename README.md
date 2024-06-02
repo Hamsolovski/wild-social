@@ -8,7 +8,7 @@
 <h3 align="center">Wild Social, the social network for wilders</h3>
 
   <p align="center">
-    <a href="https://out-omega-dun.vercel.app/">Check the app</a>
+    <a href="https://hamsolovski.github.io/wild-social/">Check the app</a>
   </p>
 </div>
 
