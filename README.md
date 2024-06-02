@@ -30,7 +30,7 @@ Distributed under the MIT License
 ## Contact
 Antoine Delalande - ant.delalande@gmail.com
 
-Project Link: [https://github.com/Hamsolovski/](https://github.com/Hamsolovski/wild-social)
+Project Link: [https://github.com/Hamsolovski/wild-social](https://github.com/Hamsolovski/wild-social)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
